@@ -5,18 +5,22 @@ function App() {
     <div className="App container">
 
     <div className="item">
-      <h2>PING<span>.</span></h2>
+      <h2>PING<span className="full-stop">.</span></h2>
     </div>
 
     <div className="item">
       <div>
-        <h1>We are launching <span>soon!</span></h1>
-        <p>Subscribe and get notified</p>
+        <div className="header">
+          <h1>We are launching</h1>
+          <h1>soon!</h1>
+        </div>
+
+        <p className="header-p">Subscribe and get notified</p>
       </div>
 
       <div>
-        <form action="">
-          <input type="text" name="" id="" placeholder="Your email address..."/>
+        <form action="" novalidate> 
+          <input type="email" name="" id="" placeholder="Your email address..." required/>
           <button type="submit">Notify Me</button>
         </form>
       </div>
@@ -27,10 +31,14 @@ function App() {
     </div>
 
     <div className="item">
-      <div className="logo-container"></div>
+      <div className="logo-container">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-instagram"></i>
+      </div>
 
       <div>
-        <p>©Copyright Ping. All rights reserved.</p>
+        <p className="copyright">©Copyright Ping. All rights reserved.</p>
       </div>
     </div>
 
