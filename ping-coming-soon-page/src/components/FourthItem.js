@@ -8,7 +8,7 @@ function FourthItem() {
       </div>
 
       <div>
-        <p className="copyright">©Copyright Ping. All rights reserved.</p>
+        <p className="copyright">©{new Date().getFullYear()} Copyright Ping. All rights reserved.</p>
       </div>
     </div>
   );
