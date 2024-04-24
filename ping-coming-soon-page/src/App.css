@@ -19,7 +19,6 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -67,7 +66,7 @@ input {
   border-radius: 2rem;
   border: 0.02rem solid hsl(223, 87%, 63%);
   font-family: "Libre Franklin", sans-serif;
-
+  margin-bottom: 0;
 }
 
 input::placeholder {
@@ -76,9 +75,13 @@ input::placeholder {
 }
 
 .error {
+  padding: 0 1rem;
   font-size: x-small;
   font-style: italic;
   color: hsl(354, 100%, 66%);
+  grid-row: 2 / 3;
+  text-align: left;
+  margin-top: 0;
 }
 
 button {
@@ -108,13 +111,11 @@ i {
   font-size: x-small;
 }
 
-
 /* ACTIVE STATES */
 
-/* input:focus {
+input:focus {
   outline: none !important;
-  border: 0.09rem solid hsl(248, 32%, 49%);
-} */
+}
 
 button:hover {
   cursor: pointer;
@@ -129,27 +130,30 @@ i:hover {
   cursor: pointer;
 }
 
-
 /* RESPONSIVE DESIGN */
 
-@media (max-width:540px) {
+@media (max-width: 540px) {
   body {
     height: fit-content;
     padding: 2rem 2rem;
   }
 
-  .header > h1{
+  .header > h1 {
     font-size: x-large;
   }
 
   form {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
     gap: 0.7rem;
     margin: 2rem 0;
   }
 
-.dashboard {
+  .error {
+    text-align: center;
+  }
+
+  .dashboard {
     width: 100%;
   }
 }

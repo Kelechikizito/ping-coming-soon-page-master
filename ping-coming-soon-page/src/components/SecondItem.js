@@ -27,18 +27,16 @@ function SecondItem() {
 
       <div>
         <form action="" noValidate>
-          <div>
-            <input
-              type="email"
-              name=""
-              id=""
-              placeholder="Your email address..."
-              required
-            />
-            <span className="third error">
-              Please provide a valid email address
-            </span>
-          </div>
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="Your email address..."
+            required
+          />
+          <span className="third error">
+            Please provide a valid email address
+          </span>
           <button onClick={handleClick} type="submit">
             Notify Me
           </button>
