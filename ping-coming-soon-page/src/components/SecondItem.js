@@ -1,11 +1,29 @@
+import React, { useRef } from 'react';
+
 function SecondItem() {
+  const myElementRef = useRef(null);
+
   function handleClick(e) {
     const form = e.target.form;
 
     function validateEmail() {
-      const isEmailValid = form[0].validity;
+      const isEmailMissing = form[0].validity.valueMissing;
+      const isEmailMismatch = form[0].validity.typeMismatch;
 
-      console.log(isEmailValid);
+      if (isEmailMissing) {
+        
+      } else {
+        
+      }
+
+      if (isEmailMismatch) {
+        
+      } else {
+        
+      }
+      
+      console.log(isEmailMissing);
+      console.log(isEmailMismatch);
     }
 
     if (!form.checkValidity()) {
@@ -34,7 +52,7 @@ function SecondItem() {
             placeholder="Your email address..."
             required
           />
-          <span className="third error">
+          <span className="error" ref={myElementRef}>
             Please provide a valid email address
           </span>
           <button onClick={handleClick} type="submit">
