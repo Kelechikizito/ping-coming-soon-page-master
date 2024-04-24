@@ -75,6 +75,12 @@ input::placeholder {
   opacity: 0.5;
 }
 
+.error {
+  font-size: x-small;
+  font-style: italic;
+  color: hsl(354, 100%, 66%);
+}
+
 button {
   padding: 0.7rem;
   background-color: hsl(223, 87%, 63%);
@@ -104,6 +110,11 @@ i {
 
 
 /* ACTIVE STATES */
+
+/* input:focus {
+  outline: none !important;
+  border: 0.09rem solid hsl(248, 32%, 49%);
+} */
 
 button:hover {
   cursor: pointer;

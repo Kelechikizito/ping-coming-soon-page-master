@@ -5,6 +5,7 @@ import ThirdItem from "./components/ThirdItem";
 import FourthItem from "./components/FourthItem";
 
 function App() {
+
   return (
     <div className="App container">
       <FirstItem />
@@ -21,7 +22,7 @@ function App() {
           <a href="https://www.frontendmentor.io?ref=challenge">
             Frontend Mentor
           </a>
-          . Coded by <a href="https://github.com/kelechikizito">Your Name Here</a>.
+          . Coded by <a href="https://github.com/kelechikizito">Kelechi Kizito Ugwu</a>.
         </p>
       </footer> */}
     </div>

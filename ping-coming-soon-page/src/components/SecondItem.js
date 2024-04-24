@@ -2,8 +2,14 @@ function SecondItem() {
   function handleClick(e) {
     const form = e.target.form;
 
+    function validateEmail() {
+      const isEmailValid = form[0].validity;
+
+      console.log(isEmailValid);
+    }
+
     if (!form.checkValidity()) {
-      console.log("Fill your input");
+      validateEmail();
       e.preventDefault();
     }
   }
@@ -21,13 +27,18 @@ function SecondItem() {
 
       <div>
         <form action="" noValidate>
-          <input
-            type="email"
-            name=""
-            id=""
-            placeholder="Your email address..."
-            required
-          />
+          <div>
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Your email address..."
+              required
+            />
+            <span className="third error">
+              Please provide a valid email address
+            </span>
+          </div>
           <button onClick={handleClick} type="submit">
             Notify Me
           </button>
