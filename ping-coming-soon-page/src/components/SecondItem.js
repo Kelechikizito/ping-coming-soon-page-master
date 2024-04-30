@@ -1,7 +1,8 @@
-import React, { useRef } from 'react';
+import { useRef, useState } from "react";
 
 function SecondItem() {
-  const myElementRef = useRef(null);
+  const spanRef = useRef(null);
+  const [placeholderText, setPlaceholder] = useState("Your email address...");
 
   function handleClick(e) {
     const form = e.target.form;
@@ -11,19 +12,16 @@ function SecondItem() {
       const isEmailMismatch = form[0].validity.typeMismatch;
 
       if (isEmailMissing) {
-        
-      } else {
-        
+        spanRef.current.style.display = "inline-block";
+        spanRef.current.textContent =
+          "Whoops! It looks like you forgot to add your email";
+      } else if (isEmailMismatch) {
+        spanRef.current.textContent = "Please provide a valid email address";
+        spanRef.current.style.display = "inline-block";
+        setPlaceholder("name@host.tld");
+      } else if (!isEmailMissing && !isEmailMismatch) {
+        spanRef.current.style.display = "none";
       }
-
-      if (isEmailMismatch) {
-        
-      } else {
-        
-      }
-      
-      console.log(isEmailMissing);
-      console.log(isEmailMismatch);
     }
 
     if (!form.checkValidity()) {
@@ -49,12 +47,10 @@ function SecondItem() {
             type="email"
             name=""
             id=""
-            placeholder="Your email address..."
+            placeholder={placeholderText}
             required
           />
-          <span className="error" ref={myElementRef}>
-            Please provide a valid email address
-          </span>
+          <span className="error" ref={spanRef}></span>
           <button onClick={handleClick} type="submit">
             Notify Me
           </button>

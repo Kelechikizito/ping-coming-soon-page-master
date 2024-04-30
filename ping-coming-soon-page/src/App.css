@@ -85,6 +85,18 @@ input::placeholder {
   display: none;
 }
 
+.errors {
+  padding: 0 1rem;
+  font-size: x-small;
+  font-style: italic;
+  color: hsl(354, 100%, 66%);
+  grid-row: 2 / 3;
+  text-align: left;
+  margin-top: 0;
+  display: inline-block;
+}
+
+
 button {
   padding: 0.7rem;
   background-color: hsl(223, 87%, 63%);
