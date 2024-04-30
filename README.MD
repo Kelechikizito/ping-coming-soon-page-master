@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./ping-coming-soon-page/screenshot.png)
 
 
 ### Links
