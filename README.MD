@@ -47,7 +47,7 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Bootstrap](https://nextjs.org/) - React framework
+- [Bootstrap](https://icons.getbootstrap.com/) - CSS framework
 
 
 ### What I learned
