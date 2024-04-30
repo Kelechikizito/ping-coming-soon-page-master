@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Github](https://github.com/Kelechikizito/ping-coming-soon-page-master)
 
 ## My process
 
@@ -93,5 +93,5 @@ I'd like to get better at React, particularly, Using recat hooks
 ## Author
 
 - Website - [Kelechi Kizito Ugwu](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Kelechikizito](https://www.frontendmentor.io/profile/Kelechikizito)
 - Twitter - [@kelechiikizito](https://www.x.com/kelechiikizito)
